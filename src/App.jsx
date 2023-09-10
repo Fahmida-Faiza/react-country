@@ -1,13 +1,12 @@
-
+import Countries from './components/Countries/Countries'
 import './App.css'
 
 function App() {
 
   return (
     <>
-      
-      <h1>Vite + React</h1>
-
+      <h1> React world tour</h1>
+      <Countries></Countries>
     </>
   )
 }
