@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import './Country.css'
+import CountryDetail from '../CountryDetail/CountryDetail';
 // step4:distructure props pabo handleVisitedFlags agula..
 const Country = ({country , handleVisitedCountry , handleVisitedFlags}) => {
     // console.log(country)
@@ -27,6 +28,13 @@ const Country = ({country , handleVisitedCountry , handleVisitedFlags}) => {
             <button onClick={handleVisited}>{visited ? 'visited' : 'Going'}</button>
             {/* {visited && 'I have visite this place'} */}
             {visited ? 'I have visited this country.' : 'I want to visit'}
+            <hr />
+            <CountryDetail
+
+                country={country}
+                handleVisitedCountry={handleVisitedCountry}
+                handleVisitedFlags={handleVisitedFlags} >
+            </CountryDetail>
         </div>
     );
 };
